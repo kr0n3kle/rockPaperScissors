@@ -1,4 +1,4 @@
-// Rock Paper Scissors game
+/* Rock Paper Scissors game
 
 
 
@@ -28,3 +28,12 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 console.log(playRound(playerSelection, computerSelection));
+
+*/
+
+const arrayPets = [{name: "dog", price: 1000},{name: "cat", price: 100}, {name: "rabbit", price: 50}, 
+{name: "fish", price: 20}]
+
+const newArr = arrayPets.forEach((item) => {
+    console.log(item.price)
+} )
