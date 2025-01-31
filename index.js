@@ -64,19 +64,17 @@ const startGame = function playGame() {
         }   
         
         checkWinner()
-        return result;
-
-        function checkWinner(){
-            let results = document.querySelector("#resultsDiv");
-                if(scores.human === 5){
-                    resultsDiv.textContent = 'YOU WON THE GAME! OH MY FREAKIN GOSHHHHHHH!!!!!';
-                } else if(scores.computer === 5){
-                    resultsDiv.textContent = 'YOU LOST THE GAME =( ';
-                }    
-        }   
-
-        
+        return result; 
     }
+
+    function checkWinner(){
+        let results = document.querySelector("#resultsDiv");
+            if(scores.human === 5){
+                resultsDiv.textContent = 'YOU WON THE GAME! OH MY FREAKIN GOSHHHHHHH!!!!!';
+            } else if(scores.computer === 5){
+                resultsDiv.textContent = 'YOU LOST THE GAME =( ';
+            }    
+    }   
 
     const resultsDiv = document.querySelector("#resultsDiv");
 
